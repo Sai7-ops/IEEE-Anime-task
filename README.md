@@ -1,0 +1,1 @@
+This Task has helped me learn a lot of cool stuff. Clip paths, creative navbar & responsive design required a lot of thinking here and there.

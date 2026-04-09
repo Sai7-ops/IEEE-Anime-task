@@ -1,0 +1,208 @@
+@keyframes crypkoPop {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.92, 0.95);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.pop-on-hover {
+  transition: filter 0.3s ease;
+}
+
+.pop-on-hover:hover {
+  animation: crypkoPop 0.5s ease forwards;
+  filter: brightness(1.1);
+  z-index: 10; 
+  cursor: pointer;
+}
+
+.link-on-hover{
+  transition: color 0.4s ease;
+}
+
+.link-on-hover:hover{
+  color: white;
+}
+
+.frame{
+  border: 12px solid black;
+  color: black;
+  background-color: #E6E4D5;
+}
+
+.heart{
+  color: black;
+  font-size: 12px;
+  top: 0;
+  right: 0;
+  transition: transform 0.5s ease 0s;
+}
+
+
+.heart:hover{
+  transform: rotateY(180deg);
+}
+
+.bolt{
+  color: gold;
+  font-size: 32px;
+}
+
+.navbar{
+  width: 70% !important;
+  height: 50px;
+  color: silver;
+  background-color: black;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; 
+  max-width: 540px; 
+  height: 50vh;
+  background: rgba(230, 228, 213, 0.75); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2000;
+  transition: top 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+  border-radius: 0 0 20px 20px;
+  padding: 30px 0; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 15px; 
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.mobile-overlay .nav-link {
+  color: #000000 !important; 
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .mobile-overlay {
+    max-width: 720px; 
+  }
+}
+
+.mobile-overlay.open {
+  top: 0;
+}
+
+.heading{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 96px;
+  line-height: 1;
+}
+
+.character{
+  width: 200px;
+  height: 250px;
+  background-color: orange;
+  clip-path: path("M 50,0 L 190,0 A 10,10 0,0,1 200,10 L 200,240 A 10,10 0,0,1 190,250 L 10,250 A 10,10 0,0,1 0,240 L 0,50 A 20,20 0,0,1 10,30 L 45,0 Z")
+}
+
+.charImg{
+  width: 150px;
+  height: 150px;
+  transition: transform 0.4s ease 0s;
+}
+
+.charImg:hover {
+  transform: rotateX(30deg);
+}
+
+.ani-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
+
+.anime{
+  background-color: aqua;
+  width: 400px;
+  height: 250px;
+  clip-path: path("M 10,0 L 350,0 L 400,50 L 400,240 A 10,10 0,0,1 390,250 L 50,250 L 0,200 L 0,10 A 10,10 0,0,1 10,0 Z");
+}
+
+.anime-wrapper{
+  width: 400px;
+}
+
+.dice{
+  background-color: #E9FF42;
+  height: 90px;
+  width: 60px;
+}
+
+.anime .dice p{
+  font-size: 12px;
+}
+
+.platform{
+  height: 260px;
+  width: 450px;
+  background-color: white;
+  clip-path: path("M 10,0 L 225,0 L 245,40 L 440,40 A 10,10 0,0,1 450,50 L 450,250 A 10,10 0,0,1 440,260 L 10,260 A 10,10 0,0,1 0,250 L 0,10 A 10,10 0,0,1 10,0 Z");
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.download{
+  background-color: white;
+  width: 150px;
+  padding: 4px 0 4px 4px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.download .icon{
+  background-color: #E9FF42;
+  margin-left: auto;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.apple{
+  margin-left: -8px;
+}
+
+.button{
+  width: 120px;
+}
+
+.capsule, span{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important;
+}
