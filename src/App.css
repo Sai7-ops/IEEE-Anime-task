@@ -131,7 +131,7 @@
 }
 
 .charImg:hover {
-  transform: rotateX(30deg);
+  transform: scale(0.85);
 }
 
 .ani-img{
